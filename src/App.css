@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.maindiv {
+  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.leftdiv {
+  width: 50%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rightdiv {
+  width: 50%;
+  background-color: #e8f0f8;
+  /* background-color: LightGray; */
+}
+.headdiv {
+  margin-top: 10%;
+  font-size: 25px;
+  font-weight: bold;
+}
+.welcomedesign {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.centerlinedesign {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3%;
+  justify-content: center;
+  width: 60%;
+  align-items: center;
+}
+.hrLineleftdesign,
+.hrLinerightdesign {
+  background-color: gray;
+  height: 1px;
+  width: 72%;
+  /* position: absolute; */
+  /* margin-top: 3.7%; */
+}
+.linecentertext {
+  width: 100%;
+}
+/* .hrLinerightdesign {
+  background-color: gray;
+  height: 1px;
+  width: 8.5%; */
+/* position: absolute; */
+/* margin-top: 1.8%; */
+/* margin-left: 21.3%; */
+/* } */
+.googledesign {
+  /* border: 1px solid gray; */
+  width: 60%;
+  text-align: center;
+  margin-bottom: 15px;
+  height: 32px;
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px gray;
+}
+.centerlinedesign {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4%;
+}
+.googleicondiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 5%; */
+  /* border: 1px solid gray; */
+  /* height: 30px; */
+}
+.googleicontext {
+  align-items: center;
+  /* border: 1pc solid red; */
+  width: 100%;
+}
+.googleimgdesign {
+  width: 6%;
+  height: 6%;
+  justify-content: start;
+}
+.formdesign {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  width: 100%;
+}
+.inputdesign {
+  width: 60%;
+  margin: auto;
+  height: 32px;
+  /* border-radius: 2px; */
+  outline: none;
+  margin-bottom: 8px;
+}
+.labeldesign {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+.radiomain {
+  display: flex;
+  flex-direction: row;
+  width: 61%;
+  margin: auto;
+  margin-top: 16px;
+}
+.radiobuttondesign {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+.buttonDesign {
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+  height: 34px;
+  background-color: rgb(31, 72, 184);
+  border: 1px solid blue;
+  color: white;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+.signupdesign {
+  width: 60%;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 2px solid white;
+}
+
+.updiv {
+  width: 50%;
+  margin-left: auto;
+  display: flex;
+  text-align: right;
+  margin-top: 10%;
+  margin-right: 5%;
+  flex-direction: column;
+}
+.textdesign {
+  color: gray;
+  font-weight: 100;
+  font-size: medium;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.buttondesign {
+  width: 35%;
+  height: 30px;
+  margin-left: auto;
+}
+.lastimg {
+  width: 80%;
+  height: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .leftdiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .rightdiv {
+    display: none;
+    visibility: hidden;
+    /* width: 50%; */
+    /* background-color: #e8f0f8; */
+    /* background-color: LightGray; */
+  }
+}
+@media screen and (max-width: 400px) {
+  .radiomain {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    /* margin: auto; */
+    margin-top: 8px;
+  }
+  .radiobuttondesign {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+  }
+}
