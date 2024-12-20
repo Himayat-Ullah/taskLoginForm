@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --primary-color: #0076c6;
+  --editIcon-color: #7e7e7e;
+  --deleteIcon-color: red;
+  --trBorder-color: #7e7e7e;
+  --inputHover-color: #545454;
+  --evenRow-color: #efeded;
+}
+.maindiv {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+.buttonDiv {
+  width: 50%;
+  margin-left: 50%;
+  padding: 2rem;
+  /* margin-bottom: 5rem; */
+}
+.buttonDiv > button {
+  width: 20%;
+  height: 2rem;
+  float: right;
+  cursor: pointer;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  caret-color: transparent !important;
+}
+.tableMaindiv {
+  width: 100%;
+  margin-top: 4rem;
+  caret-color: transparent !important;
+}
+.tableMaindiv > table {
+  width: 100%;
+}
+.trDesign {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid #000; */
+  border: lightgray;
+  /* border-top: 1px solid var(--trBorder-color); */
+  border-bottom: 1px solid var(--trBorder-color);
+}
+tr:nth-child(even) {
+  background-color: var(--evenRow-color);
+}
+.tdDesign {
+  padding: 10px 10px;
+  display: flex;
+}
+.editIcon,
+.deleteIcon {
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 5px;
+}
+.editIcon {
+  color: var(--editIcon-color);
+}
+.deleteIcon {
+  color: var(--deleteIcon-color);
+}
+.FormMainDiv {
+  width: 40%;
+  margin: auto;
+  margin-top: 20vh;
+  /* color: green; */
+}
+.FormMainDiv > form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--trBorder-color);
+  padding: 2rem;
+  background-color: var(--evenRow-color);
+  border-radius: 10px;
+}
+.labelDesign {
+  font-size: 1.5rem;
+}
+.inputDesign {
+  height: 2rem;
+  outline: none;
+  padding-left: 5px;
+  font-size: 1.3rem;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  border: 1px solid var(--trBorder-color);
+}
+.inputDesign:focus {
+  border: 2px solid var(--inputHover-color);
+}
+.FormButton {
+  margin-top: 1rem;
+  width: 90%;
+  margin-left: 2.5%;
+  justify-content: space-between;
+  text-align: center;
+  height: 2rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.modalDesign {
+  width: 40%;
+  height: 8rem;
+  padding-top: 1rem;
+  background: var(--evenRow-color);
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 30vh;
+  /* background-color: rgba(0, 0, 0, 0.61); */
+  /* backdrop-filter: blur(5px); */
+}
+.modalDesign > p {
+  font-size: 25px;
+  text-align: center;
+}
+.modalButtonDiv {
+  width: 60%;
+  margin-left: 20%;
+  float: right;
+  /* background: green; */
+}
+.modalButtonDiv > button {
+  width: 40%;
+  height: 2rem;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  margin: 5px;
+  margin-top: 2rem;
+}
+.modalBlur {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.61);
+  margin-left: -10%;
+  margin-top: -8rem;
+  backdrop-filter: blur(1px);
+  z-index: 20;
+}
